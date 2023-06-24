@@ -2,6 +2,13 @@
 This paper _A consensus cell type atlas from multiple connectomes reveals principles of circuit stereotypy and variation_
 reports the systematic annotation of the FAFB-FlyWire adult female fly brain connectome including over 3000 consensus cell types validated across two brains and three brain hemispheres. The raw annotation data will be available here for download and have also been contributed to the https://codex.flywire.ai portal.
 
+### Annotations
+
+To aid a number of analyses, hemibrain meshes were mapped into FlyWire (FAFB14.1) space. These can be co-visualised within neuroglancer for example by following this link: https://tinyurl.com/flywirehb. This also enables direct querying of both our flywire annotations and hemibrain annotations from within neuroglancer to efficiently find and compare cell types.
+
+### Skeletons & NBLAST scores
+Skeletons and NBLAST scores were deposited 
+
 ### Software tools 
 All the software developed for working with FlyWire data and used in this paper is open-source and available through Github. 
 
@@ -25,9 +32,8 @@ All the software developed for working with FlyWire data and used in this paper 
 
 Please open an issue in the respective repository if you have questions or run into problems.
 
-#### CATMAID-space
+### CATMAID-spaces
 Skeletons, connectivity and annotations for FlyWire neurons have been imported into a CATMAID instance publicly available at https://fafb-flywire.catmaid.org/. This allows the interactive exploration and analysis of the data.
 
-
-## Found a mistake?
+## Broken link, found a mistake?
 Please open an [issue](https://github.com/flyconnectome/flywire_annotations/issues).
