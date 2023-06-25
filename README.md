@@ -4,7 +4,16 @@ reports the systematic annotation of the FAFB-FlyWire adult female fly brain con
 
 ## Annotations
 
+- [`/supplemental_files/Supplemental_file1_annotations.tsv`](supplemental_files/Supplemental_file1_annotations.tsv') contains annotations for flow, superclass, cell class, nerve, lineage, side, morphology groups, neurotransmitter and VirtualFlyBrain IDs
+- [`/supplemental_files/Supplemental_file2_hemilineages_clustering.csv`](supplemental_files/Supplemental_file2_hemilineages_clustering.csv') contains details on the NBLAST clustering of hemilineages that generated the morphology groups
+- [`/supplemental_files/Supplemental_file3_summary_with_ngl_links.csv`](supplemental_files/Supplemental_file3_summary_with_ngl_links.csv') contains a summary for each hemilineage including neuroglancer links to view them
+
 To aid a number of analyses, hemibrain meshes were mapped into FlyWire (FAFB14.1) space. These can be co-visualised within neuroglancer for example by following this link: https://tinyurl.com/flywirehb. This also enables direct querying of both our flywire annotations and hemibrain annotations from within neuroglancer to efficiently find and compare cell types.
+
+## Videos 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/1kctjRyJYno/0.jpg)](http://www.youtube.com/watch?v=1kctjRyJYno "Supplemental Video")
+
+_Supplemental Video 1: all FlyWire neurons_
 
 ## Skeletons & NBLAST scores
 Skeletons and NBLAST scores are too large to be deposited on Github. Instead they are available for download via Zenodo: https://doi.org/10.5281/zenodo.8077335
