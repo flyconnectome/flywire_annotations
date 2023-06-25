@@ -35,5 +35,14 @@ Please open an issue in the respective repository if you have questions or run i
 ## CATMAID-spaces
 Skeletons, connectivity and annotations for FlyWire neurons have been imported into a CATMAID instance publicly available at https://fafb-flywire.catmaid.org/. This allows the interactive exploration and analysis of the data.
 
+## How to cite?
+```bibtex
+@article{schlegel2023,
+  author = {Schlegel, Philipp and Yin, Yijie and Bates, Alexander S. and Dorkenwald, Sven and Eichler, Katharina and Brooks, Paul and Han, Daniel S. and Gkantia, Marina and dos Santos, Marcia and Munnelly, Eva J. and Badalamente, Griffin and Capdevila, Laia Serratosa and Sane, Varun and Pleijzier, Markus W. and Tamimi, Imaan F.M. and Dunne, Christopher R. and Salgarella, Irene and Fang, Siqi and Perlman, Eric and Kazimiers, Tom and Jagannathan, Sridhar R. and Matsliah, Arie and Sterling, Amy R and Yu, Szi-chieh and McKellar, Claire E. and Consortium, FlyWire and Costa, Marta and Seung, H. Sebastian and Murthy, Mala and Hartenstein, Volker and Bock, Davi D. and Jefferis, Gregory S.X.E.},
+  journal = {bioRxiv},
+  title = {A consensus cell type atlas from multiple connectomes reveals principles of circuit stereotypy and variation},
+  year = {2023}}
+```
+
 ## Found a broken link?
 Please open an [issue](https://github.com/flyconnectome/flywire_annotations/issues).
