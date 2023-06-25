@@ -13,7 +13,12 @@ To aid a number of analyses, hemibrain meshes were mapped into FlyWire (FAFB14.1
 ## Videos 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/1kctjRyJYno/0.jpg)](http://www.youtube.com/watch?v=1kctjRyJYno "Supplemental Video")
 
-_Supplemental Video 1: all FlyWire neurons_
+_Supplemental Video 1: Rendering of all FlyWire neurons._
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/V-af_NQYGx0/0.jpg)](http://www.youtube.com/watch?v=V-af_NQYGx0 "Supplemental Video")
+
+_Supplemental Video 2: Rendering of neurons by superclass._
+
 
 ## Skeletons & NBLAST scores
 Skeletons and NBLAST scores are too large to be deposited on Github. Instead they are available for download via Zenodo: https://doi.org/10.5281/zenodo.8077335
