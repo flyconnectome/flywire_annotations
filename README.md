@@ -19,7 +19,7 @@ _Supplemental Video 1: all FlyWire neurons_
 Skeletons and NBLAST scores are too large to be deposited on Github. Instead they are available for download via Zenodo: https://doi.org/10.5281/zenodo.8077335
 
 ## Software tools 
-All the software developed for working with FlyWire data and used in this paper is open-source and available through Github. 
+All software used in this paper is open-source and available through Github. Some of it was specifically developed for working with FlyWire data.
 
 ### Python 
 
