@@ -32,7 +32,7 @@ All software used in this paper is open-source and available through Github. Som
 | ---------------- | ----------- |
 | [navis](https://github.com/navis-org/navis)            | Analysis and visualisation of neurons. Used e.g. for NBLAST.  |
 | [navis-flybrains](https://github.com/navis-org/navis-flybrains)  | Used to transform data between template spaces (e.g. from hemibrain to FlyWire). |
-| [fafbseg](https://github.com/flyconnectome/fafbseg-py)          | Query and analyse FlyWire data (segmentation, meshes, skeletons, annotations. |
+| [fafbseg](https://github.com/flyconnectome/fafbseg-py)          | Query and analyse FlyWire data (segmentation, meshes, skeletons, annotations). |
 | [neuprint-python](https://github.com/connectome-neuprint/neuprint-python)  | Query neuPrint instances (e.g. for the hemibrain). Developed by FlyEM (Janelia Research Campus). |
 
 ### R
@@ -40,8 +40,8 @@ All software used in this paper is open-source and available through Github. Som
 | Name             | Description |
 | ---------------- | ----------- |
 | [natverse](https://natverse.org)          | Analysis suite with a focus on neuroanatomical data.  |
-| [fafbseg](https://github.com/naverse/fafbseg)          | Query and analyse FlyWire data (segmentation, meshes, skeletons, annotations. |
-| [coconat](https://github.com/natverse/coconat) | Analysis suite for comparative connectomics in R. See also [coconatfly](https://github.com/natverse/coconatfly) |
+| [fafbseg](https://github.com/naverse/fafbseg)          | Query and analyse FlyWire data (segmentation, meshes, skeletons, annotations). |
+| [coconat](https://github.com/natverse/coconat) | Analysis suite for comparative connectomics in R. See also [coconatfly](https://github.com/natverse/coconatfly). |
 | [neuprintr](https://github.com/natverse/neuprintr) | Query neuPrint instances (e.g. for the hemibrain) |
 
 Please open an issue in the respective repository if you have questions or run into problems.
