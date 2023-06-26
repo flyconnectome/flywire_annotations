@@ -58,5 +58,10 @@ Skeletons, connectivity and annotations for FlyWire neurons have been imported i
   year = {2023}}
 ```
 
+## Changelog 
+Because annotations are still evolving we might occasionally update them. You can always go back to the state at the time of the paper using the tags!
+
+- `1.0.0`: First release matching the Schlegel *et al*. bioRxiv paper.
+
 ## Found a broken link?
 Please open an [issue](https://github.com/flyconnectome/flywire_annotations/issues).
