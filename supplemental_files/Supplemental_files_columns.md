@@ -10,7 +10,8 @@
 - `top_nt` is the top predicted neurotransmitter for the given neuron, calculated by averaging confidences over the transmitter predictions for all presynapses for the given neuron and choosing the most confident transmitter
 - `top_nt_conf` is the average confidence for the top neurotransmitter
 - `side` refers to the soma side for brain-intrinsic neurons and the nerve-entry side for sensory/ascending neurons
-- `vfb_id` provides a mapping to the ontology database of the [VirtualFlyBrain](https://virtualflybrain.org/)
+- `fbbt_id` and `vfb_id` provide mappings to the database of the [VirtualFlyBrain](https://virtualflybrain.org/); the former is used for ontology terms (like cell types), the latter is an identifier for individual neurons
+- `status` we recorded a number of outliers: `outlier_seg` are neurons with segmentation issues (often due to dark cytosol); `outlier_bio` are neurons with small to medium sized differences (e.g. extra branches) compared with their contralateral or hemibrain homologues
 
 
 ## Explanation of columns for `Supplemental_file2_summary_with_ngl_links.csv`: 
