@@ -21,7 +21,7 @@ To aid a number of analyses, hemibrain meshes were mapped into FlyWire (FAFB14.1
 
 _Supplemental Video 1: Rendering of all FlyWire neurons._
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/3obmOmQB0ak/0.jpg)](http://www.youtube.com/watch?v=V-3obmOmQB0ak "Supplemental Video")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/3obmOmQB0ak/0.jpg)](https://www.youtube.com/watch?v=3obmOmQB0ak "Supplemental Video")
 
 _Supplemental Video 2: Rendering of neurons by superclass._
 
