@@ -17,11 +17,11 @@ reading the annotation data and extracting numbers/counts used in the paper
 To aid a number of analyses, hemibrain meshes were mapped into FlyWire (FAFB14.1) space. These can be co-visualised within neuroglancer for example by following this link: https://tinyurl.com/flywirehb. This also enables direct querying of both our flywire annotations and hemibrain annotations from within neuroglancer to efficiently find and compare cell types.
 
 ## Videos
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/1kctjRyJYno/0.jpg)](http://www.youtube.com/watch?v=1kctjRyJYno "Supplemental Video")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/a7YejmMU8CI/0.jpg)](http://www.youtube.com/watch?v=a7YejmMU8CI "Supplemental Video")
 
 _Supplemental Video 1: Rendering of all FlyWire neurons._
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/V-af_NQYGx0/0.jpg)](http://www.youtube.com/watch?v=V-af_NQYGx0 "Supplemental Video")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/3obmOmQB0ak/0.jpg)](http://www.youtube.com/watch?v=V-3obmOmQB0ak "Supplemental Video")
 
 _Supplemental Video 2: Rendering of neurons by superclass._
 
