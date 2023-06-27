@@ -7,12 +7,13 @@ reports the systematic annotation of the FAFB-FlyWire adult female fly brain con
 - [`/supplemental_files/Supplemental_file1_annotations.tsv`](supplemental_files/Supplemental_file1_annotations.tsv') contains annotations for flow, superclass, cell class, nerve, lineage, side, morphology groups, neurotransmitter and VirtualFlyBrain IDs
 - [`/supplemental_files/Supplemental_file2_hemilineages_clustering.csv`](supplemental_files/Supplemental_file2_hemilineages_clustering.csv') contains details on the NBLAST clustering of hemilineages that generated the morphology groups
 - [`/supplemental_files/Supplemental_file3_summary_with_ngl_links.csv`](supplemental_files/Supplemental_file3_summary_with_ngl_links.csv') contains a summary for each hemilineage including neuroglancer links to view them
+- [`/supplemental_files/Supplemental_file4_hemibrain_meta.csv`](supplemental_files/Supplemental_file4_hemibrain_meta.csv') contains meta data for hemibrain (v1.2.1) pulled from neuPrint with some additional columns (e.g. `side`) used in our analyses
 
 _See [here](supplemental_files/Supplemental_files_columns.md) for detailed explanations for each column in these spreadsheets._
 
 To aid a number of analyses, hemibrain meshes were mapped into FlyWire (FAFB14.1) space. These can be co-visualised within neuroglancer for example by following this link: https://tinyurl.com/flywirehb. This also enables direct querying of both our flywire annotations and hemibrain annotations from within neuroglancer to efficiently find and compare cell types.
 
-## Videos 
+## Videos
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/1kctjRyJYno/0.jpg)](http://www.youtube.com/watch?v=1kctjRyJYno "Supplemental Video")
 
 _Supplemental Video 1: Rendering of all FlyWire neurons._
@@ -25,10 +26,10 @@ _Supplemental Video 2: Rendering of neurons by superclass._
 ## Skeletons & NBLAST scores
 Skeletons and NBLAST scores are too large to be deposited on Github. Instead they are available for download via Zenodo: https://doi.org/10.5281/zenodo.8077335
 
-## Software tools 
+## Software tools
 All software used in this paper is open-source and available through Github. Some of it was specifically developed for working with FlyWire data.
 
-### Python 
+### Python
 
 | Name             | Description |
 | ---------------- | ----------- |
@@ -60,7 +61,7 @@ Skeletons, connectivity and annotations for FlyWire neurons have been imported i
   year = {2023}}
 ```
 
-## Changelog 
+## Changelog
 Because annotations are still evolving we might occasionally update them. You can always go back to the state at the time of the paper using the tags!
 
 - `1.0.0`: First release matching the Schlegel *et al*. bioRxiv paper.
