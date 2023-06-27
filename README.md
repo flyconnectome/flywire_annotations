@@ -11,7 +11,7 @@ reports the systematic annotation of the FAFB-FlyWire adult female fly brain con
 
 _See [here](supplemental_files/Supplemental_files_columns.md) for detailed explanations for each column in these spreadsheets._
 
-- [`/code/annotation_counts.ipynb`](code/annotation_counts.ipynb') contains examples of
+- [`/code/annotation_counts.ipynb`](/code/annotation_counts.ipynb) contains examples of
 reading the annotation data and extracting numbers/counts used in the paper
 
 To aid a number of analyses, hemibrain meshes were mapped into FlyWire (FAFB14.1) space. These can be co-visualised within neuroglancer for example by following this link: https://tinyurl.com/flywirehb. This also enables direct querying of both our flywire annotations and hemibrain annotations from within neuroglancer to efficiently find and compare cell types.
