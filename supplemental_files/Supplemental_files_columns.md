@@ -14,7 +14,7 @@
 - `status` we recorded a number of outliers: `outlier_seg` are neurons with segmentation issues (often due to dark cytosol); `outlier_bio` are neurons with small to medium sized differences (e.g. extra branches) compared with their contralateral or hemibrain homologues
 
 
-## Explanation of columns for `Supplemental_file2_summary_with_ngl_links.csv`: 
+## Explanation of columns for `Supplemental_file2_summary_with_ngl_links.csv` 
 - `ito_lee_hemilineage` and `hartenstein_hemilineage` provide the hemilineage in ItoLee and Hartenstein nomenclature; note that not all labels exist in the Hartenstein nomenclature.
 - `notes` record some of our observations of select published clones.
 - `number_of_clusters` (`center`,`left` and `right`) columns contain the number of morphological groups in that hemilineage on different sides.
@@ -26,7 +26,7 @@
 - `roots_` (`left`,`right`) contains the root_630 ids of each hemilineage on each side.
 - `is_hemilineage` contains our best guesses on whether the entry is a hemilineage or not. For instance, `H(NT)` means that we guess that this is a hemilineage (instead of a combination of two hemilineages of one lineage) based on the neurotransmitter information from Eckstein et al. 2023. 
 
-## Explanation of columns for `Supplemental_file3_hemilineages_clustering.csv`: 
+## Explanation of columns for `Supplemental_file3_hemilineages_clustering.csv
 - `supervoxel_id` corresponds to the `supervoxel_id`s in the `Supplemental_file1_annotations.tsv` file. 
 - `root_630` is the ID of the neuron in the FlyWire `630` release.
 - `ito_lee_hemilineage` and `hartenstein_hemilineage` provide the hemilineage in ItoLee and Hartenstein nomenclature; note that not all labels exist in the Hartenstein nomenclature.
