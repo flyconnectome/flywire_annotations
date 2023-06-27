@@ -16,11 +16,11 @@
 
 ## Explanation of columns for `Supplemental_file2_summary_with_ngl_links.csv` 
 - `ito_lee_hemilineage` and `hartenstein_hemilineage` provide the hemilineage in ItoLee and Hartenstein nomenclature; note that not all labels exist in the Hartenstein nomenclature.
+- `ito_lee_lineage` and `hartenstein_lineage` provide the corresponding lineage names to the hemilineages.
 - `notes` record some of our observations of select published clones.
 - `number_of_clusters` (`center`,`left` and `right`) columns contain the number of morphological groups in that hemilineage on different sides.
 - `*_fw` (`all`,`center`,`left` and `right` sides) columns contain flywire links with the neurons in that hemilineage selected, on that side, and coloured based on the colouring provided in `Supplemental_file3_hemilineages_clustering.csv`.
 - `*_ngl_short` (`all`,`center`,`left` and `right` sides) columns contain neuroglancer links with the neurons in that hemilineage selected, on that side, and coloured based on the colouring provided in `Supplemental_file3_hemilineages_clustering.csv`. Each morphological group is put in a separate layer. There is also a de-selected layer, named based on the hemilineage, that contains the same neuorns.
-- `ito_lee_lineage` and `hartenstein_lineage` provide the corresponding lineage names to the hemilineages.
 - `hemibrain_map` contains the rough* mapping of that hemilineage to a hemibrain cell body fiber.
 - `N_*` (`left`,`right`,`other`) contains the number of neurons in each hemilineage.
 - `roots_*` (`left`,`right`) contains the root_630 ids of each hemilineage on each side.
@@ -36,4 +36,10 @@
 - `neuropil` contains the top three innervated neuropils by neurons of the current morphological group, as counted by the amount of skeleton in the respective neuropils. The neuropils are alphabetically ordered within each entry. 
 - `col_elbow` is the colour (in hex) used in `Fig S2.1` and `Supplemental_file_2_summary_with_links.csv`. Each morphological group within a hemilineage is assigned one colour. 
 - `height_10` contains the groups within each hemilineage after cutting the dendrograms (exemplified in `Fig 2I`) at `distanct = 10` - this distance seemed the next best place to separate the hemilineages uniformly, following the `elbow` method.
+
+## Explanation of columms for `Supplemental_file4_hemibrain_meta.csv
+- `bodyId` is the neuron's ID
+- `instance` roughly corresponds to a neuron name and often contains the side as e.g.  `_L`
+- `type` is the cell type as shown in neuPrint; `_a` suffixes typically indicate connectivity types
+
 
