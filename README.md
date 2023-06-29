@@ -47,7 +47,7 @@ All software used in this paper is open-source and available through Github. Som
 | ---------------- | ----------- |
 | [natverse](https://natverse.org)          | Analysis suite with a focus on neuroanatomical data.  |
 | [fafbseg](https://natverse.org/fafbseg)          | Query and analyse FlyWire data (segmentation, meshes, skeletons, annotations). |
-| [coconatfly](https://natverse.org/coconatfly) | Analysis suite for Drosophila comparative connectomics. See also [coconat](https://github.com/natverse/coconat). |
+| [coconatfly](https://natverse.org/coconatfly) | Analysis suite for Drosophila comparative connectomics. Enables hemibrain-flywire connectivity clustering. See also [coconat](https://github.com/natverse/coconat). |
 | [neuprintr](https://natverse.org/neuprintr) | Query neuPrint instances (e.g. for the hemibrain) |
 
 Please open an issue in the respective repository if you have questions or run into problems.
