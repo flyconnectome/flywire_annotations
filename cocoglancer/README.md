@@ -1,14 +1,14 @@
-# cocoglancer [![](dp1m-20pct.png "DP1m projection neurons from FlyWire and hemibrain"){width="256"}](https://tinyurl.com/flywirehb)
+# [cocoglancer](https://tinyurl.com/flywirehb)
 
 **cocoglancer** is a simple web application designed to allow co-visualisation of multiple connectomics datasets. It's almost a cheat to call it an application of its own: it is just the mainline version of [neuroglancer](https://github.com/google/neuroglancer) preloaded with a specific set of layers hosted by the [itanna](https://www.itanna.io/index.html) collaborative project (D. Bock and G. Jefferis) and the [MRC LMB in Cambridge](https://www2.mrc-lmb.cam.ac.uk/). However, despite this simplicity we have found it incredibly useful for comparing fly connectome data and we expect many others will find the same.
 
-The key features are 1) that it allows co-visualisation of FlyWire and hemibrain neurons in the same space with 2) enables live querying of cell type / class annotations within the same viewer.
+The key features are 1) that it allows co-visualisation of FlyWire and hemibrain neurons in the same space and 2) you can do live querying of cell type / class annotations within the same viewer.
 
 ## Data Layers
 
 The basic scene is accessible from the url <https://tinyurl.com/flywirehb>. This includes seven layers:
 
-![](layers.png "cocoglancer layers")
+![](images/layers.png "cocoglancer layers")
 
 1.  EM image data
 
@@ -26,13 +26,13 @@ The basic scene is accessible from the url <https://tinyurl.com/flywirehb>. This
 
 For us the key benefit of this setup is being able to directly co-visualise neurons from FlyWire and the hemibrain in order to draw conclusions about cell types. Early on we also found it useful for reviewing FlyWire neurons e.g. to see when neurons might have false merges or splits. Neuroglancer layers can be
 
-![DA1 Projection Neurons in the same space: hemibrain (orange), flywire (blue)](da1pnslr.png)
+![DA1 Projection Neurons in the same space: hemibrain (orange), flywire (blue)](images/da1pnslr.png)
 
 ## Annotations
 
 Besides the data layers listed above that bring FlyWire and hemibrain data into the same space, the other killer feature of **cocoglancer** is querying neuron annotations directly from within neuroglancer. Go to the layer information tab and type any regular expression query into the text box.
 
-![flywire query](da1-query-flywire.png){width="281"} ![hemibrain query](da1-query-hbm.png){width="228"}
+![flywire query](images/da1-query-flywire.png){width="281"} ![hemibrain query](images/da1-query-hbm.png){width="228"}
 
 ## Acknowledgements
 
