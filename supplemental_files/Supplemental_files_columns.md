@@ -26,7 +26,7 @@
 - `roots_*` (`left`,`right`) contains the root_630 ids of each hemilineage on each side.
 - `is_hemilineage` contains our best guesses on whether the entry is a hemilineage or not. For instance, `H(NT)` means that we guess that this is a hemilineage (instead of a combination of two hemilineages of one lineage) based on the neurotransmitter information from Eckstein et al. 2023.
 
-## Explanation of columns for `Supplemental_file3_hemilineages_clustering.csv
+## Explanation of columns for `Supplemental_file3_hemilineages_clustering.csv`
 - `supervoxel_id` corresponds to the `supervoxel_id`s in the `Supplemental_file1_annotations.tsv` file.
 - `root_630` is the ID of the neuron in the FlyWire `630` release.
 - `ito_lee_hemilineage` and `hartenstein_hemilineage` provide the hemilineage in ItoLee and Hartenstein nomenclature; note that not all labels exist in the Hartenstein nomenclature.
@@ -37,7 +37,7 @@
 - `col_elbow` is the colour (in hex) used in `Fig S2.1` and `Supplemental_file_2_summary_with_links.csv`. Each morphological group within a hemilineage is assigned one colour.
 - `height_10` contains the groups within each hemilineage after cutting the dendrograms (exemplified in `Fig 2I`) at `distanct = 10` - this distance seemed the next best place to separate the hemilineages uniformly, following the `elbow` method.
 
-## Explanation of columms for `Supplemental_file4_hemibrain_meta.csv
+## Explanation of columms for `Supplemental_file4_hemibrain_meta.csv`
 The following columns correspond 1:1 to columns shown/available for download through neuPrint: `bodyId`, `type`, `notes`, `status`, `cellBodyFiber`, `somaLocation`, `pre`, `post` and `cropped`.
 
 We additionally added the following columns:
