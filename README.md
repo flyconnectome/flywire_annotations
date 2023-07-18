@@ -25,6 +25,10 @@ _Supplemental Video 1: Rendering of all FlyWire neurons._
 
 _Supplemental Video 2: Rendering of neurons by superclass._
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/xqmAA4NA3eA/0.jpg)](https://www.youtube.com/watch?v=xqmAA4NA3eA "Supplemental Video")
+
+_Supplemental Video 3: Morphology group clustering from identified hemilineage._
+
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/wX8z8zG6U6s/0.jpg)](https://www.youtube.com/watch?v=wX8z8zG6U6s "Supplemental Video")
 
 _Supplemental Video 4: FlyWire hemibrain cell type matches._
