@@ -5,8 +5,8 @@ reports the systematic annotation of the FAFB-FlyWire adult female fly brain con
 ## Annotations
 
 - [`/supplemental_files/Supplemental_file1_annotations.tsv`](supplemental_files/Supplemental_file1_annotations.tsv) contains annotations for flow, superclass, cell class, nerve, lineage, side, morphology groups, neurotransmitter and VirtualFlyBrain IDs
-- [`/supplemental_files/Supplemental_file2_hemilineages_clustering.csv`](supplemental_files/Supplemental_file2_hemilineages_clustering.csv) contains details on the NBLAST clustering of hemilineages that generated the morphology groups
-- [`/supplemental_files/Supplemental_file3_summary_with_ngl_links.csv`](supplemental_files/Supplemental_file3_summary_with_ngl_links.csv) contains a summary for each hemilineage including neuroglancer links to view them
+- [`/supplemental_files/Supplemental_file2_summary_with_ngl_links.csv`](supplemental_files/Supplemental_file2_summary_with_ngl_links.csv) contains a summary for each hemilineage including neuroglancer links to view them
+- [`/supplemental_files/Supplemental_file3_hemilineages_clustering.csv`](supplemental_files/Supplemental_file3_hemilineages_clustering.csv) contains details on the NBLAST clustering of hemilineages that generated the morphology groups
 - [`/supplemental_files/Supplemental_file4_hemibrain_meta.csv`](supplemental_files/Supplemental_file4_hemibrain_meta.csv) contains meta data for hemibrain (v1.2.1) pulled from neuPrint with some additional columns (e.g. `side`) used in our analyses
 
 _See [here](supplemental_files/Supplemental_files_columns.md) for detailed explanations for each column in these spreadsheets._
@@ -24,6 +24,10 @@ _Supplemental Video 1: Rendering of all FlyWire neurons._
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/3obmOmQB0ak/0.jpg)](https://www.youtube.com/watch?v=3obmOmQB0ak "Supplemental Video")
 
 _Supplemental Video 2: Rendering of neurons by superclass._
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/xqmAA4NA3eA/0.jpg)](https://www.youtube.com/watch?v=xqmAA4NA3eA "Supplemental Video")
+
+_Supplemental Video 3: Morphology group clustering from identified hemilineage._
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/wX8z8zG6U6s/0.jpg)](https://www.youtube.com/watch?v=wX8z8zG6U6s "Supplemental Video")
 

@@ -32,7 +32,8 @@ For us the key benefit of this setup is being able to directly co-visualise neur
 
 Besides the data layers listed above that bring FlyWire and hemibrain data into the same space, the other killer feature of **cocoglancer** is querying neuron annotations directly from within neuroglancer. Go to the layer information tab and type any regular expression query into the text box.
 
-![flywire query](images/da1-query-flywire.png){width="281"} ![hemibrain query](images/da1-query-hbm.png){width="228"}
+<img src="images/da1-query-flywire.png" width="281"> <img src="images/da1-query-hbm.png" width="228">    
+Here is an example of a query using regular expression: `/CB07(1[2345]|56)`looks for entry `CB07`followed by `12/13/14/15` or `56`. In other words, it looks for `CB0712/CB0713/CB0714/CB0715/CB0756`. 
 
 ## Acknowledgements
 
