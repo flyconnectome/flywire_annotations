@@ -46,5 +46,7 @@ We additionally added the following columns:
 - `side` refers to the soma side and is principally based on the `instance` column where an `_L` and `_R` typically indicates the side; we did however make a sizeable number of manual adjustments
 - `pre_con2` contains the number of outgoing connections for a given neuron whereas `pre` contains the number of presynapses (remember that insect synapses are polyadic); these numbers were used to compare hemibrain vs FlyWire presynapse counts
 - `fbbt_id` contains a FBbt ID that maps to the entry for a given hemibrain type in the VirtualFlyBrain database
+- `ito_lee_hemilineage` provide identified hemilineages in ItoLee nomenclature
+- `morphology_group` provides a coarse morphological grouping based on hemilineage clustering
 
 
