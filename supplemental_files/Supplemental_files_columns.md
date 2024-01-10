@@ -1,4 +1,4 @@
-## Explanation of columns for `Supplemental_file1_annotations.tsv`
+## Explanation of columns for `Supplemental_file1_neuron_annotations.tsv` and `Supplemental_file2_non_neuron_annotations.tsv`
 - `pos_x`, `pos_y`, `pos_z` are anchor coordinates in 4x4x40nm voxel space (typically on the backbone of the neuron) for given neuron
 - `supervoxel_id` is the ID of the supervoxel the anchor coordinates map to
 - `root_id` is the ID of the neuron in the FlyWire `630` release
@@ -14,7 +14,7 @@
 - `status` records a number of outliers: `outlier_seg` are neurons with segmentation issues (often due to dark cytosol); `outlier_bio` are neurons with small to medium sized differences (e.g. extra branches) compared with their contralateral or hemibrain homologues
 
 
-## Explanation of columns for `Supplemental_file2_summary_with_ngl_links.csv`
+## Explanation of columns for `Supplemental_file3_summary_with_ngl_links.csv`
 - `ito_lee_hemilineage` and `hartenstein_hemilineage` provide the hemilineage in ItoLee and Hartenstein nomenclature; note that not all labels exist in the Hartenstein nomenclature.
 - `notes` record some of our observations of select published clones.
 - `*_ngl_short` (`all`,`center`,`left` and `right` sides) columns contain neuroglancer links with the neurons in that hemilineage selected, on that side, and coloured based on the colouring provided in `Supplemental_file3_hemilineages_clustering.csv`. Each morphological group is put in a separate layer. There is also a de-selected layer, named based on the hemilineage, that contains the same neuorns.
@@ -37,7 +37,7 @@
 - `col_elbow` is the colour (in hex) used in `Fig S2.1` and `Supplemental_file_2_summary_with_links.csv`. Each morphological group within a hemilineage is assigned one colour.
 - `height_10` contains the groups within each hemilineage after cutting the dendrograms (exemplified in `Fig 2I`) at `distanct = 10` - this distance seemed the next best place to separate the hemilineages uniformly, following the `elbow` method.
 
-## Explanation of columms for `Supplemental_file4_hemibrain_meta.csv`
+## Explanation of columms for `Supplemental_file5_hemibrain_meta.csv`
 The following columns correspond 1:1 to columns shown/available for download through neuPrint: `bodyId`, `type`, `notes`, `status`, `cellBodyFiber`, `somaLocation`, `pre`, `post` and `cropped`.
 
 We additionally added the following columns:
@@ -46,5 +46,7 @@ We additionally added the following columns:
 - `side` refers to the soma side and is principally based on the `instance` column where an `_L` and `_R` typically indicates the side; we did however make a sizeable number of manual adjustments
 - `pre_con2` contains the number of outgoing connections for a given neuron whereas `pre` contains the number of presynapses (remember that insect synapses are polyadic); these numbers were used to compare hemibrain vs FlyWire presynapse counts
 - `fbbt_id` contains a FBbt ID that maps to the entry for a given hemibrain type in the VirtualFlyBrain database
+- `ito_lee_hemilineage` provide identified hemilineages in ItoLee nomenclature
+- `morphology_group` provides a coarse morphological grouping based on hemilineage clustering
 
 
