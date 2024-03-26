@@ -17,25 +17,32 @@
 ## Explanation of columns for `Supplemental_file3_summary_with_ngl_links.csv`
 - `ito_lee_hemilineage` and `hartenstein_hemilineage` provide the hemilineage in ItoLee and Hartenstein nomenclature; note that not all labels exist in the Hartenstein nomenclature.
 - `notes` record some of our observations of select published clones.
-- `*_ngl_short` (`all`,`center`,`left` and `right` sides) columns contain neuroglancer links with the neurons in that hemilineage selected, on that side, and coloured based on the colouring provided in `Supplemental_file3_hemilineages_clustering.csv`. Each morphological group is put in a separate layer. There is also a de-selected layer, named based on the hemilineage, that contains the same neuorns.
-- `*_fw` (`all`,`center`,`left` and `right` sides) columns contain flywire links with the neurons in that hemilineage selected, on that side, and coloured based on the colouring provided in `Supplemental_file3_hemilineages_clustering.csv`.
-- `number_of_clusters_*` (`center`,`left` and `right`) columns contain the number of morphological groups in that hemilineage on different sides.
-- `number_of_neurons_*` (`center`,`left` and `right`) columns contain the number of neurons per hemilineage on different sides.
-- `roots_*` (`left`,`right`) contains the root_630 ids of each hemilineage on each side.
 - `ito_lee_lineage` and `hartenstein_lineage` provide the corresponding lineage names to the hemilineages.
 - `hemibrain_map` contains the rough* mapping of that hemilineage to a hemibrain cell body fiber.
 - `is_hemilineage` contains our best guesses on whether the entry is a hemilineage or not. For instance, `H(NT)` means that we guess that this is a hemilineage (instead of a combination of two hemilineages of one lineage) based on the neurotransmitter information from Eckstein et al. 2023.
+- `*ngl_link` (``, `left_`, `right_` and `hemibrain_`) columns contain neuroglancer links with the neurons in that hemilineage selected, on that side, and coloured based on the morphological groups. Each morphological group is in a separate layer (in addition, flywire and hemibrain neurons are in separate layers). There is also a de-selected layer that contains all neuorns in that hemilineage in flywire.
+- `ids_*` (`left`, `right`, `center`, `hb`) colunms contain the neuron ids for that hemilineage in that side.
+- `id_count_*` (`left`, `right`, `center`, `hb`) columns contain the neuron count for that hemilineage in that side.
+- `n_clusters_*` (`left`, `right`, `hb`) columns contain the number of clusters for that hemilineage in that side. 
+- `shape_truncated` and `number_truncated` columns contain information on whether the hemilineage is truncated in shape/number in hemibrain.
 
-## Explanation of columns for `Supplemental_file3_hemilineages_clustering.csv`
-- `supervoxel_id` corresponds to the `supervoxel_id`s in the `Supplemental_file1_annotations.tsv` file.
-- `root_630` is the ID of the neuron in the FlyWire `630` release.
+
+## Explanation of columns for `Supplemental_file4_hemilineages_clustering.csv`
+- `root_id` is the ID of the neuron in the FlyWire `783` release.
+- `persistent_cluster` column contains the `side_cluster` labels of neurons that cluster together across one-, two- and three-hemisphere clustering (see the `Morphological groups` section in `Methods`).
+- `side` is the hemisphere (`left`/`right`/`hemibrain`) the neuron is in.  
 - `ito_lee_hemilineage` and `hartenstein_hemilineage` provide the hemilineage in ItoLee and Hartenstein nomenclature; note that not all labels exist in the Hartenstein nomenclature.
-- `dendrogram_order` records the order of `root_ids` on the dendrograms (exemplified in `Fig 2I`) / morphological proximity of neurons of one hemilineage.
-- `group` records the groups formed after cutting the dendrograms using the `elbow` method. The integers start from 1 on the left of the dendrogram.
-- `morphological_group` is `ito_lee_hemilineage` and `group` concatenated together, such that each morphological group has a unique value.
-- `neuropil` contains the top three innervated neuropils by neurons of the current morphological group, as counted by the amount of skeleton in the respective neuropils. The neuropils are alphabetically ordered within each entry.
-- `col_elbow` is the colour (in hex) used in `Fig S2.1` and `Supplemental_file_2_summary_with_links.csv`. Each morphological group within a hemilineage is assigned one colour.
-- `height_10` contains the groups within each hemilineage after cutting the dendrograms (exemplified in `Fig 2I`) at `distanct = 10` - this distance seemed the next best place to separate the hemilineages uniformly, following the `elbow` method.
+- `hemilineage_group` records the morphological groups.
+- `supervoxel_id` corresponds to the `supervoxel_id`s in the `Supplemental_file1_neuron_annotations.tsv` file. The value is NA if the neuron is from hemibrain. 
+- `nps` column contains the top-three innervated neuropils, alphabetically sorted, for that neuron.
+- The data can be read using the following code in Python:
+  ```
+  import pandas as pd 
+  supp4 = pd.read_csv(
+    'https://raw.githubusercontent.com/flyconnectome/flywire_annotations/main/supplemental_files/Supplemental_file4_hemilineages_clustering.csv', 
+    index_col=0, dtype = {'supervoxel_id': 'Int64'})
+  ```
+
 
 ## Explanation of columms for `Supplemental_file5_hemibrain_meta.csv`
 The following columns correspond 1:1 to columns shown/available for download through neuPrint: `bodyId`, `type`, `notes`, `status`, `cellBodyFiber`, `somaLocation`, `pre`, `post` and `cropped`.
