@@ -1,7 +1,7 @@
 ## Explanation of columns for `Supplemental_file1_neuron_annotations.tsv` and `Supplemental_file2_non_neuron_annotations.tsv`
 - `pos_x`, `pos_y`, `pos_z` are anchor coordinates in 4x4x40nm voxel space (typically on the backbone of the neuron) for given neuron
 - `supervoxel_id` is the ID of the supervoxel the anchor coordinates map to
-- `root_id` is the ID of the neuron in the FlyWire `630` release
+- `root_id` is the ID of the neuron in the FlyWire `783` release
 - `soma_x`, `soma_y`, `soma_z` are soma coordinates in 4x4x40nm voxel space
 - `nucleus_id` maps to the nucleus detection table (available through CAVE); neurons with `soma_x/y/z` but without `nucleus_id` have had their soma manually marked
 - `flow`, `super_class`, `cell_class`, `cell_sub_class`, `cell_type`, `hemibrain_type` are the hierarchical annotations
@@ -16,15 +16,15 @@
 
 ## Explanation of columns for `Supplemental_file3_summary_with_ngl_links.csv`
 - `ito_lee_hemilineage` and `hartenstein_hemilineage` provide the hemilineage in ItoLee and Hartenstein nomenclature; note that not all labels exist in the Hartenstein nomenclature.
-- `notes` record some of our observations of select published clones.
+- `notes` records some of our observations of select published clones.
 - `ito_lee_lineage` and `hartenstein_lineage` provide the corresponding lineage names to the hemilineages.
 - `hemibrain_map` contains the rough* mapping of that hemilineage to a hemibrain cell body fiber.
-- `is_hemilineage` contains our best guesses on whether the entry is a hemilineage or not. For instance, `H(NT)` means that we guess that this is a hemilineage (instead of a combination of two hemilineages of one lineage) based on the neurotransmitter information from Eckstein et al. 2023.
-- `*ngl_link` (``, `left_`, `right_` and `hemibrain_`) columns contain neuroglancer links with the neurons in that hemilineage selected, on that side, and coloured based on the morphological groups. Each morphological group is in a separate layer (in addition, flywire and hemibrain neurons are in separate layers). There is also a de-selected layer that contains all neuorns in that hemilineage in flywire.
+- `is_hemilineage` contains our best guesses on whether the entry is a hemilineage or not. For instance, `H(NT)` means that we guess that this is a hemilineage (instead of a combination of two hemilineages of one lineage) based on the neurotransmitter information from Eckstein et al. (2023).
+- `*ngl_link` (``, `left_`, `right_` and `hemibrain_`) columns contain neuroglancer links with the neurons in that hemilineage selected, on that side, and coloured based on the morphological groups. Each morphological group is in a separate layer (in addition, FlyWire and hemibrain neurons are in separate layers). There is also a de-selected layer that contains all neuorns in that hemilineage in FlyWire.
 - `ids_*` (`left`, `right`, `center`, `hb`) colunms contain the neuron ids for that hemilineage in that side.
 - `id_count_*` (`left`, `right`, `center`, `hb`) columns contain the neuron count for that hemilineage in that side.
 - `n_clusters_*` (`left`, `right`, `hb`) columns contain the number of clusters for that hemilineage in that side. 
-- `shape_truncated` and `number_truncated` columns contain information on whether the hemilineage is truncated in shape/number in hemibrain.
+- `shape_truncated` and `number_truncated` columns contain information on whether the hemilineage is truncated in shape/number in the hemibrain.
 
 
 ## Explanation of columns for `Supplemental_file4_hemilineages_clustering.csv`
@@ -33,7 +33,7 @@
 - `side` is the hemisphere (`left`/`right`/`hemibrain`) the neuron is in.  
 - `ito_lee_hemilineage` and `hartenstein_hemilineage` provide the hemilineage in ItoLee and Hartenstein nomenclature; note that not all labels exist in the Hartenstein nomenclature.
 - `hemilineage_group` records the morphological groups.
-- `supervoxel_id` corresponds to the `supervoxel_id`s in the `Supplemental_file1_neuron_annotations.tsv` file. The value is NA if the neuron is from hemibrain. 
+- `supervoxel_id` corresponds to the `supervoxel_id`s in the `Supplemental_file1_neuron_annotations.tsv` file. The value is NA if the neuron is from the hemibrain. 
 - `nps` column contains the top-three innervated neuropils, alphabetically sorted, for that neuron.
 - The data can be read using the following code in Python:
   ```
