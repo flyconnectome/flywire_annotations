@@ -2,15 +2,17 @@
 
 This repository is principally based on Schlegel _et al._ ["_Whole-brain annotation and multi-connectome cell typing quantifies circuit stereotypy in Drosophila_"](https://www.biorxiv.org/content/10.1101/2023.06.27.546055v2)
 which reports the systematic annotation of the FlyWire female adult fly brain
-connectome. The annotation data will be available here for download and have
+(FAFB) connectome. The annotation data will be available here for download and have
 also been contributed to the https://codex.flywire.ai portal and
 [FAFB-FlyWire CATMAID spaces](https://fafb-flywire.catmaid.org/).
 
-The annotations collated here are used by e.g.
-[fafbseg-py](https://fafbseg-py.readthedocs.io/) to programmatically work
-with the FlyWire dataset.
+The annotations collated here are used by the
+[fafbseg-py](https://fafbseg-py.readthedocs.io/) Python package and the
+[fafbseg](https://natverse.org/fafbseg/) to enable programmatic analysis of the
+FlyWire dataset.
 
-We're generally happy to consider contributions from the community to update/improve existing or add entirely new annotations.
+We're happy to consider contributions from the community to update/improve 
+existing or add entirely new annotations.
 Please see the ["How to contribute"](#How-to-contribute?) section for details.
 
 
@@ -68,6 +70,8 @@ All software used in this paper is open-source and available through Github. Som
 | [coconatfly](https://natverse.org/coconatfly)    | Analysis suite for Drosophila comparative connectomics. Enables hemibrain-flywire connectivity clustering. See also [coconat](https://github.com/natverse/coconat). |
 | [neuprintr](https://natverse.org/neuprintr)      | Query neuPrint instances (e.g. for the hemibrain) |
 
+The recommended entry point for R is [coconatfly](https://natverse.org/coconatfly).
+
 Please open an issue in the respective repository if you have questions or run into problems.
 
 ## CATMAID-spaces
@@ -102,4 +106,4 @@ We welcome all kinds of contributions. For example:
 - suggestions for new/updated cell type information (e.g. from more recent publications)
 
 If you already know what needs doing, feel free to open a pull request
-right away. When in doubt please open an [issue](https://github.com/flyconnectome/flywire_annotations/issues) so we can discuss the best way to the issue.
+right away. When in doubt please open an [issue](https://github.com/flyconnectome/flywire_annotations/issues) so we can discuss the best way to fix the issue.
