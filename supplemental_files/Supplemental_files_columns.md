@@ -19,7 +19,16 @@
 - `notes` records some of our observations of select published clones.
 - `ito_lee_lineage` and `hartenstein_lineage` provide the corresponding lineage names to the hemilineages.
 - `hemibrain_map` contains the rough* mapping of that hemilineage to a hemibrain cell body fiber.
-- `is_hemilineage` contains our best guesses on whether the entry is a hemilineage or not. For instance, `H(NT)` means that we guess that this is a hemilineage (instead of a combination of two hemilineages of one lineage) based on the neurotransmitter information from Eckstein _et al._ (2023).
+- `is_hemilineage` contains our best guesses on whether the entry is a hemilineage or not:
+  -  `H(NT)`: we guess that this is a hemilineage (instead of a combination of two hemilineages of one lineage) based on the neurotransmitter information from [Eckstein _et al._ (2024)](https://www.cell.com/cell/fulltext/S0092-8674(24)00307-6); 
+  -  `2L_1NT`: 2 lineages, all neurons are predicted the same neurotransmitter;
+  -  `H`: a hemilineage; 
+  -  `H/L`: a hemilineage or lineage; 
+  -  `H?`: we think it is a hemilineage, but we are not certain; 
+  -  `H_2NT`: we think it is a hemilineage, but the neurons are predicted to have 2 neurotransmitters;
+  -  `Hp`: probably a hemilineage; 
+  -  `L`: lineage; 
+  -  `T2`: neurons in this cell body fibre tract belong to a type II lineage. 
 - `*ngl_link` (` `, `left_`, `right_` and `hemibrain_`) columns contain neuroglancer links with the neurons in that hemilineage selected, on that side, and coloured based on the morphological groups. Each morphological group is in a separate layer (in addition, FlyWire and hemibrain neurons are in separate layers). There is also a de-selected layer that contains all neurons in that hemilineage in FlyWire.
 - `ids_*` (`left`, `right`, `center`, `hb`) colunms contain the neuron ids for that hemilineage in that side.
 - `id_count_*` (`left`, `right`, `center`, `hb`) columns contain the neuron count for that hemilineage in that side.
