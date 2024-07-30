@@ -1,14 +1,14 @@
 # FlyWire neuron annotations
 
 This repository is principally based on Schlegel _et al._ "Whole-brain annotation and multi-connectome cell typing of Drosophila", Nature (2024)
-which reports the systematic annotation of the FlyWire female adult fly brain
+which reports the systematic annotation of the FlyWire female adult fly brain (FAFB)
 connectome. The annotation data will be available here for download and have
 also been contributed to the https://codex.flywire.ai portal and
 [FAFB-FlyWire CATMAID spaces](https://fafb-flywire.catmaid.org/).
 
-The annotations collated here are used by e.g.
-[fafbseg-py](https://fafbseg-py.readthedocs.io/) to programmatically work
-with the FlyWire dataset.
+The annotations collated here are used by the [fafbseg-py](https://fafbseg-py.readthedocs.io/) Python and
+the [fafbseg](https://natverse.org/fafbseg/) R package to enable programmatic analysis
+of the FlyWire dataset.
 
 We're generally happy to consider contributions from the community to update/improve existing or add entirely new annotations.
 Please see the ["How to contribute"](#How-to-contribute?) section for details.
@@ -54,7 +54,7 @@ Skeletons and NBLAST scores are too large to be deposited on Github. Instead the
 Synapses table and edge list can be downloaded from https://zenodo.org/records/10676866 (provided by Sven Dorkenwald & FlyWire.ai).
 
 ## Software tools
-All software used in this paper is open-source and available through Github. Some of it was specifically developed for working with FlyWire data.
+All software used in this paper is open-source and available through Github. Some of it was specifically developed for working with FlyWire data. Please open an issue in the respective repository if you have questions or run into problems.
 
 ### Python
 
@@ -66,6 +66,8 @@ All software used in this paper is open-source and available through Github. Som
 | [cocoa](https://github.com/flyconnectome/cocoa) | Analysis suite for comparative connectomics. Enables e.g. hemibrain-FlyWire connectivity clustering. |
 | [neuprint-python](https://github.com/connectome-neuprint/neuprint-python)  | Query neuPrint instances (e.g. for the hemibrain). Developed by FlyEM (Janelia Research Campus). |
 
+The recommended entry point for Python is [fafbseg-py](https://github.com/flyconnectome/fafbseg-py).
+
 ### R
 
 | Name             | Description |
@@ -75,7 +77,7 @@ All software used in this paper is open-source and available through Github. Som
 | [coconatfly](https://natverse.org/coconatfly)    | Analysis suite for Drosophila comparative connectomics. Enables hemibrain-FlyWire connectivity clustering. See also [coconat](https://github.com/natverse/coconat). |
 | [neuprintr](https://natverse.org/neuprintr)      | Query neuPrint instances (e.g. for the hemibrain) |
 
-Please open an issue in the respective repository if you have questions or run into problems.
+The recommended entry point for R is [coconatfly](https://natverse.org/coconatfly).
 
 ## CATMAID-spaces
 Skeletons, connectivity and annotations for FlyWire neurons have been imported into a CATMAID instance publicly available at https://fafb-flywire.catmaid.org/. This allows the interactive exploration and analysis of the data.
