@@ -1,6 +1,6 @@
 # FlyWire neuron annotations
 
-This repository is principally based on Schlegel _et al._ "Whole-brain annotation and multi-connectome cell typing of Drosophila", Nature (2024)
+This repository is principally based on Schlegel _et al._ "[Whole-brain annotation and multi-connectome cell typing of Drosophila](https://doi-org.ezp.lib.cam.ac.uk/10.1038/s41586-024-07686-5)", Nature (2024)
 which reports the systematic annotation of the FlyWire female adult fly brain (FAFB)
 connectome. The annotation data will be available here for download and have
 also been contributed to the https://codex.flywire.ai portal and
