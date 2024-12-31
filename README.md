@@ -79,17 +79,21 @@ Skeletons, connectivity and annotations for FlyWire neurons have been imported i
 
 ## How to cite?
 ```bibtex
-@article {Schlegel2023,
-	author = {Philipp Schlegel and Yijie Yin and Alexander Shakeel Bates and Sven Dorkenwald and Katharina Eichler and Paul Brooks and Daniel S Han and Marina Gkantia and Marcia dos Santos and Eva J Munnelly and Griffin Badalamente and Laia Serratosa Capdevila and Varun Aniruddha Sane and Markus William Pleijzier and Imaan F M Tamimi and Christopher R Dunne and Irene Salgarella and Alexandre Javier and Siqi Fang and Eric Perlman and Tom Kazimiers and Sridhar R Jagannathan and Arie Matsliah and Amy R Sterling and Szi-chieh Yu and Claire E McKellar and FlyWire Consortium and Marta Costa and H. Sebastian Seung and Mala Murthy and Volker Hartenstein and Davi D Bock and Gregory S X E Jefferis},
-	title = {Whole-brain annotation and multi-connectome cell typing quantifies circuit stereotypy in Drosophila},
-	elocation-id = {2023.06.27.546055},
-	year = {2023},
-	doi = {10.1101/2023.06.27.546055},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2023/07/15/2023.06.27.546055},
-	eprint = {https://www.biorxiv.org/content/early/2023/07/15/2023.06.27.546055.full.pdf},
-	journal = {bioRxiv}
-}
+@article{Schlegel:2024,
+	author = {Schlegel, Philipp and Yin, Yijie and Bates, Alexander Shakeel and 
+	Dorkenwald, Sven and Eichler, Katharina and Brooks, Paul and Han, Daniel S and
+	Gkantia, Marina and Dos Santos, Marcia and Munnelly, Eva J and 
+	Badalamente, Griffin and Capdevila, Laia Serratosa and Sane, Varun Aniruddha
+	and Pleijzier, Markus William and Tamimi, Imaan F M and Dunne, Christopher R 
+	and Salgarella, Irene and Javier, Alexandre and Fang, Siqi and Perlman, Eric 
+	and Kazimiers, Tom and Jagannathan, Sridhar R and Matsliah, Arie and
+	Sterling, Amy R and Yu, Szi-Chieh and McKellar, Claire E and 
+	{FlyWire Consortium} and Costa, Marta and Seung, H Sebastian and Murthy, Mala
+	and Hartenstein, Volker and Bock, Davi D and Jefferis, Gregory S X E},
+	journal = {Nature},
+	month = {Oct},
+	title = {Whole-brain annotation and multi-connectome cell typing of Drosophila},
+	year = {2024}}
 ```
 
 ## Changelog
