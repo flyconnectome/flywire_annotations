@@ -108,18 +108,12 @@ Please cite Schlegel _et al._ (2024) and Dorkenwald _et al._ (2024) when using a
 	journal = {Nature}
 }
 @article{Dorkenwald2024,
-  title = {Neuronal wiring diagram of an adult brain},
-  volume = {634},
-  ISSN = {1476-4687},
-  url = {http://dx.doi.org/10.1038/s41586-024-07558-y},
-  DOI = {10.1038/s41586-024-07558-y},
-  number = {8032},
-  journal = {Nature},
-  publisher = {Springer Science and Business Media LLC},
   author = {Dorkenwald,  Sven and Matsliah,  Arie and Sterling,  Amy R. and Schlegel,  Philipp and Yu,  Szi-chieh and McKellar,  Claire E. and Lin,  Albert and Costa,  Marta and Eichler,  Katharina and Yin,  Yijie and Silversmith,  Will and Schneider-Mizell,  Casey and Jordan,  Chris S. and Brittain,  Derrick and Halageri,  Akhilesh and Kuehner,  Kai and Ogedengbe,  Oluwaseun and Morey,  Ryan and Gager,  Jay and Kruk,  Krzysztof and Perlman,  Eric and Yang,  Runzhe and Deutsch,  David and Bland,  Doug and Sorek,  Marissa and Lu,  Ran and Macrina,  Thomas and Lee,  Kisuk and Bae,  J. Alexander and Mu,  Shang and Nehoran,  Barak and Mitchell,  Eric and Popovych,  Sergiy and Wu,  Jingpeng and Jia,  Zhen and Castro,  Manuel A. and Kemnitz,  Nico and Ih,  Dodam and Bates,  Alexander Shakeel and Eckstein,  Nils and Funke,  Jan and Collman,  Forrest and Bock,  Davi D. and Jefferis,  Gregory S. X. E. and Seung,  H. Sebastian and Murthy,  Mala and The FlyWire Consortium},
+  title = {Neuronal wiring diagram of an adult brain},
   year = {2024},
-  month = oct,
-  pages = {124–138}
+  doi = {10.1038/s41586-024-07558-y},
+  publisher = {Springer Nature},
+  journal = {Nature},
 }
 ```
 </details>
