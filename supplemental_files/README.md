@@ -1,6 +1,6 @@
 > [!IMPORTANT]
 > File names still match those reported in Schlegel _et al._, Nature (2024). However, the content may have been
-> updated and extended with Berg _et al._ (in prep). Please see the [changelog](../README.md#changelog) for details.
+> updated and extended with Berg _et al._, bioRxiv (2025). Please see the [changelog](../README.md#changelog) for details.
 
 
 ## Explanation of columns for `Supplemental_file1_neuron_annotations.tsv` and `Supplemental_file2_non_neuron_annotations.tsv`
