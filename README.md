@@ -1,14 +1,17 @@
 # FlyWire neuron annotations
 
-This repository is principally based on Schlegel _et al._ "[Whole-brain annotation and multi-connectome cell typing of Drosophila](https://doi-org.ezp.lib.cam.ac.uk/10.1038/s41586-024-07686-5)", Nature (2024)
-which reports the systematic annotation of the FlyWire female adult fly brain (FAFB)
-connectome. The annotation data will be available here for download and have
-also been contributed to the https://codex.flywire.ai portal and
-[FAFB-FlyWire CATMAID spaces](https://fafb-flywire.catmaid.org/).
+> [!IMPORTANT]
+> Annotations in this repository have been updated since the initial FlyWire preprint.
+> Please see the [tagged release](https://github.com/flyconnectome/flywire_annotations/releases)
+> for versions matching specific publications. See the [changelog](#Changelog) for details.
 
-The annotations collated here are used by the [fafbseg-py](https://fafbseg-py.readthedocs.io/) Python and
-the [fafbseg](https://natverse.org/fafbseg/) R package to enable programmatic analysis
-of the FlyWire dataset.
+This repository contains systematic neuron annotations and other data products for the `783` public release of
+the FlyWire female adult fly brain (FAFB) connectome.
+
+The initial set of annotations was reported in Schlegel _et al._ ["Whole-brain annotation and multi-connectome cell typing of Drosophila", Nature (2024)](https://doi-org.ezp.lib.cam.ac.uk/10.1038/s41586-024-07686-5) and has been updated and extended in Berg _et al._ (_in prep_).
+
+Annotations collated here are used by the [fafbseg-py](https://fafbseg-py.readthedocs.io/) Python and
+the [fafbseg](https://natverse.org/fafbseg/) R package to enable programmatic analysis of the FlyWire dataset.
 
 We're generally happy to consider contributions from the community to update/improve existing or add entirely new annotations.
 Please see the ["How to contribute"](#How-to-contribute?) section for details.
@@ -21,7 +24,7 @@ Please see the ["How to contribute"](#How-to-contribute?) section for details.
 - [`/supplemental_files/Supplemental_file4_summary_with_ngl_links.csv`](supplemental_files/Supplemental_file4_summary_with_ngl_links.csv) contains a summary for each hemilineage including neuroglancer links to view them
 - [`/supplemental_files/Supplemental_file5_hemibrain_meta.csv`](supplemental_files/Supplemental_file5_hemibrain_meta.csv) contains meta data for hemibrain (v1.2.1) pulled from neuPrint with some additional columns (e.g. `side`) used in our analyses
 
-_See [here](supplemental_files/Supplemental_files_columns.md) for detailed explanations for each column in these spreadsheets._
+_See [here](supplemental_files/README.md) for detailed explanations for each column in these spreadsheets._
 
 - [`/code/annotation_counts.ipynb`](/code/annotation_counts.ipynb) contains examples of
 reading the annotation data and extracting numbers/counts used in the paper
@@ -83,6 +86,18 @@ The recommended entry point for R is [coconatfly](https://natverse.org/coconatfl
 Skeletons, connectivity and annotations for FlyWire neurons have been imported into a CATMAID instance publicly available at https://fafb-flywire.catmaid.org/. This allows the interactive exploration and analysis of the data.
 
 ## How to cite?
+
+Version `3.0.0` and later:
+
+Please cite Berg _et al._ (in prep), Schlegel _et al._ (2024) and Dorkenwald _et al._ (2024) when using annotations from this repository.
+
+Pre `3.0.0`:
+
+Please cite Schlegel _et al._ (2024) and Dorkenwald _et al._ (2024) when using annotations from this repository.
+
+<details>
+<summary>BibTex entries for publications</summary>
+
 ```bibtex
 @article {Schlegel2024,
 	author = {Philipp Schlegel and Yijie Yin and Alexander Shakeel Bates and Sven Dorkenwald and Katharina Eichler and Paul Brooks and Daniel S Han and Marina Gkantia and Marcia dos Santos and Eva J Munnelly and Griffin Badalamente and Laia Serratosa Capdevila and Varun Aniruddha Sane and Alexandra M F Fragniere and Ladann Kiassat and Markus William Pleijzier and Imaan F M Tamimi and Christopher R Dunne and Irene Salgarella and Alexandre Javier and Siqi Fang and Eric Perlman and Tom Kazimiers and Sridhar R Jagannathan and Arie Matsliah and Amy R Sterling and Szi-chieh Yu and Claire E McKellar and FlyWire Consortium and Marta Costa and H. Sebastian Seung and Mala Murthy and Volker Hartenstein and Davi D Bock and Gregory S X E Jefferis},
@@ -92,12 +107,29 @@ Skeletons, connectivity and annotations for FlyWire neurons have been imported i
 	publisher = {Springer Nature},
 	journal = {Nature}
 }
+@article{Dorkenwald2024,
+  author = {Dorkenwald,  Sven and Matsliah,  Arie and Sterling,  Amy R. and Schlegel,  Philipp and Yu,  Szi-chieh and McKellar,  Claire E. and Lin,  Albert and Costa,  Marta and Eichler,  Katharina and Yin,  Yijie and Silversmith,  Will and Schneider-Mizell,  Casey and Jordan,  Chris S. and Brittain,  Derrick and Halageri,  Akhilesh and Kuehner,  Kai and Ogedengbe,  Oluwaseun and Morey,  Ryan and Gager,  Jay and Kruk,  Krzysztof and Perlman,  Eric and Yang,  Runzhe and Deutsch,  David and Bland,  Doug and Sorek,  Marissa and Lu,  Ran and Macrina,  Thomas and Lee,  Kisuk and Bae,  J. Alexander and Mu,  Shang and Nehoran,  Barak and Mitchell,  Eric and Popovych,  Sergiy and Wu,  Jingpeng and Jia,  Zhen and Castro,  Manuel A. and Kemnitz,  Nico and Ih,  Dodam and Bates,  Alexander Shakeel and Eckstein,  Nils and Funke,  Jan and Collman,  Forrest and Bock,  Davi D. and Jefferis,  Gregory S. X. E. and Seung,  H. Sebastian and Murthy,  Mala and The FlyWire Consortium},
+  title = {Neuronal wiring diagram of an adult brain},
+  year = {2024},
+  doi = {10.1038/s41586-024-07558-y},
+  publisher = {Springer Nature},
+  journal = {Nature},
+}
 ```
+</details>
 
 ## Changelog
 Because annotations are still evolving we will occasionally update them. Thanks to Github's versioning you can always go back to the state at a
 given time (e.g. at initial publication) using the tags!
 
+- [`3.0.0`](https://github.com/flyconnectome/flywire_annotations/releases/tag/v3.0.0): First update based on [Berg _et al._, bioRxiv (2025)](https://www.biorxiv.org/content/10.1101/2025.10.09.680999v1). Principally based on comparison between FlyWire (materialization `783`) and the Janelia MaleCNS connectome (version `0.9`):
+  - Updated and new cell type annotations based on cross-validation with MaleCNS
+  - dimorphism (isomorphic, dimorphic, sex-specific) annotations (`dimorphism` and `matching_notes` columns)
+  - synonyms for cell types to cross-link with past literature (`synonyms` column)
+  - _fruitless_ and _doublesex_ expression annotations (`fru_dsx` column)
+  - `morphology_group` column has been removed
+  - new `supertype` column which matches the corresponding entry in neuPrint for the MaleCNS
+  - minor updates to hemilineage annotations for Flywire and hemibrain
 - [`2.1.0`](https://github.com/flyconnectome/flywire_annotations/releases/tag/v2.1.0): Still based on the `783` materialization but with substantial updates and revisions to cell types and other annotations. This is the version reported on in the Schlegel *et al.*, Nature (2024) and Dorkenwald *et al.*, Nature (2024).
 - [`2.0.0`](https://github.com/flyconnectome/flywire_annotations/releases/tag/v2.0.0): First major revision of annotations. With this release annotations are now based principally on the updated FlyWire segmentation version `783`. It includes new cell types and cell classes for the majority of neurons in both central brain and optic lobes.
 - [`1.1.0`](https://github.com/flyconnectome/flywire_annotations/releases/tag/v1.1.0): Second release for the updated Schlegel *et al*. (2023) bioRxiv version. Principally based on FlyWire segmentation version `630`.

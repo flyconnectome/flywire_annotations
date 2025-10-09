@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> File names still match those reported in Schlegel _et al._, Nature (2024). However, the content may have been
+> updated and extended with Berg _et al._, bioRxiv (2025). Please see the [changelog](../README.md#changelog) for details.
+
+
 ## Explanation of columns for `Supplemental_file1_neuron_annotations.tsv` and `Supplemental_file2_non_neuron_annotations.tsv`
 - `pos_x`, `pos_y`, `pos_z` are anchor coordinates in 4x4x40nm voxel space (typically on the backbone of the neuron) for given neuron
 - `supervoxel_id` is the ID of the supervoxel the anchor coordinates map to
@@ -6,12 +11,17 @@
 - `nucleus_id` maps to the nucleus detection table (available through CAVE); neurons with `soma_x/y/z` but without `nucleus_id` have had their soma manually marked
 - `flow`, `super_class`, `cell_class`, `cell_sub_class`, `cell_type`, `hemibrain_type` are the hierarchical annotations
 - `ito_lee_hemilineage` and `hartenstein_hemilineage` provide the hemilineage in ItoLee and Hartenstein nomenclature; note that not all labels exist in the Hartenstein nomenclature
-- `morphology_group` provides a coarse morphological grouping based on hemilineage clustering
 - `top_nt` is the top predicted neurotransmitter for the given neuron, calculated by averaging confidences over the transmitter predictions for all presynapses for the given neuron and choosing the most confident transmitter
 - `top_nt_conf` is the average confidence for the top neurotransmitter
 - `side` refers to the soma side for brain-intrinsic neurons and the nerve-entry side for sensory/ascending neurons
 - `fbbt_id` and `vfb_id` provide mappings to the database of the [VirtualFlyBrain](https://virtualflybrain.org/); the former is used for ontology terms (like cell types), the latter is an identifier for individual neurons
 - `status` records a number of outliers: `outlier_seg` are neurons with segmentation issues (often due to dark cytosol); `outlier_bio` are neurons with small to medium sized differences (e.g. extra branches) compared with their contralateral or hemibrain homologues
+- `fru_dsx` records whether the neuron expresses _fruitless_ and/or _doublesex_ (new with version `3.0.0`)
+- `synonyms` contains synonyms for the cell type to help cross-link with past literature (new with version `3.0.0`)
+- `dimorphism` contains annotations on whether the neuron is isomorphic, dimorphic or female-specific (new with version `3.0.0`)
+- `matching_notes` contains notes on differences between male and female versions of the neuron (new with version `3.0.0`)
+- `supertype` contains the supertype as used in neuPrint for the MaleCNS (new with version `3.0.0`)
+- ~~`morphology_group` provides a coarse morphological grouping based on hemilineage clustering~~ *(dropped with version `3.0.0`)*
 
 
 ## Explanation of columns for `Supplemental_file3_summary_with_ngl_links.csv`
@@ -20,35 +30,35 @@
 - `ito_lee_lineage` and `hartenstein_lineage` provide the corresponding lineage names to the hemilineages.
 - `hemibrain_map` contains the rough* mapping of that hemilineage to a hemibrain cell body fiber.
 - `is_hemilineage` contains our best guesses on whether the entry is a hemilineage or not:
-  -  `H(NT)`: we guess that this is a hemilineage (instead of a combination of two hemilineages of one lineage) based on the neurotransmitter information from [Eckstein _et al._ (2024)](https://www.cell.com/cell/fulltext/S0092-8674(24)00307-6); 
+  -  `H(NT)`: we guess that this is a hemilineage (instead of a combination of two hemilineages of one lineage) based on the neurotransmitter information from [Eckstein _et al._ (2024)](https://www.cell.com/cell/fulltext/S0092-8674(24)00307-6);
   -  `2L_1NT`: 2 lineages, all neurons are predicted the same neurotransmitter;
-  -  `H`: a hemilineage; 
-  -  `H/L`: a hemilineage or lineage; 
-  -  `H?`: we think it is a hemilineage, but we are not certain; 
+  -  `H`: a hemilineage;
+  -  `H/L`: a hemilineage or lineage;
+  -  `H?`: we think it is a hemilineage, but we are not certain;
   -  `H_2NT`: we think it is a hemilineage, but the neurons are predicted to have 2 neurotransmitters;
-  -  `Hp`: probably a hemilineage; 
-  -  `L`: lineage; 
-  -  `T2`: neurons in this cell body fibre tract belong to a type II lineage. 
+  -  `Hp`: probably a hemilineage;
+  -  `L`: lineage;
+  -  `T2`: neurons in this cell body fibre tract belong to a type II lineage.
 - `*ngl_link` (` `, `left_`, `right_` and `hemibrain_`) columns contain neuroglancer links with the neurons in that hemilineage selected, on that side, and coloured based on the morphological groups. Each morphological group is in a separate layer (in addition, FlyWire and hemibrain neurons are in separate layers). There is also a de-selected layer that contains all neurons in that hemilineage in FlyWire.
 - `ids_*` (`left`, `right`, `center`, `hb`) colunms contain the neuron ids for that hemilineage in that side.
 - `id_count_*` (`left`, `right`, `center`, `hb`) columns contain the neuron count for that hemilineage in that side.
-- `n_clusters_*` (`left`, `right`, `hb`) columns contain the number of clusters for that hemilineage in that side. 
+- `n_clusters_*` (`left`, `right`, `hb`) columns contain the number of clusters for that hemilineage in that side.
 - `shape_truncated` and `number_truncated` columns contain information on whether the hemilineage is truncated in shape/number in the hemibrain.
 
 
 ## Explanation of columns for `Supplemental_file4_hemilineages_clustering.csv`
 - `root_id` is the ID of the neuron in the FlyWire `783` release.
 - `persistent_cluster` column contains the `side_cluster` labels of neurons that cluster together across one-, two- and three-hemisphere clustering (see the `Morphological groups` section in `Methods`).
-- `side` is the hemisphere (`left`/`right`/`hemibrain`) the neuron is in.  
+- `side` is the hemisphere (`left`/`right`/`hemibrain`) the neuron is in.
 - `ito_lee_hemilineage` and `hartenstein_hemilineage` provide the hemilineage in ItoLee and Hartenstein nomenclature; note that not all labels exist in the Hartenstein nomenclature.
 - `hemilineage_group` records the morphological groups.
-- `supervoxel_id` corresponds to the `supervoxel_id`s in the `Supplemental_file1_neuron_annotations.tsv` file. The value is NA if the neuron is from the hemibrain. 
+- `supervoxel_id` corresponds to the `supervoxel_id`s in the `Supplemental_file1_neuron_annotations.tsv` file. The value is NA if the neuron is from the hemibrain.
 - `nps` column contains the top-three innervated neuropils, alphabetically sorted, for that neuron.
 - The data can be read using the following code in Python:
   ```
-  import pandas as pd 
+  import pandas as pd
   supp4 = pd.read_csv(
-    'https://raw.githubusercontent.com/flyconnectome/flywire_annotations/main/supplemental_files/Supplemental_file4_hemilineages_clustering.csv', 
+    'https://raw.githubusercontent.com/flyconnectome/flywire_annotations/main/supplemental_files/Supplemental_file4_hemilineages_clustering.csv',
     index_col=0, dtype = {'supervoxel_id': 'Int64'})
   ```
 
