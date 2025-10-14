@@ -8,7 +8,10 @@
 This repository contains systematic neuron annotations and other data products for the `783` public release of
 the FlyWire female adult fly brain (FAFB) connectome.
 
-The initial set of annotations was reported in Schlegel _et al._ ["Whole-brain annotation and multi-connectome cell typing of Drosophila", Nature (2024)](https://doi-org.ezp.lib.cam.ac.uk/10.1038/s41586-024-07686-5) and has been updated and extended in Berg _et al._ (_in prep_).
+The initial set of annotations was reported in Schlegel _et al._ ["Whole-brain annotation and multi-connectome cell typing of Drosophila", Nature (2024)](https://doi-org.ezp.lib.cam.ac.uk/10.1038/s41586-024-07686-5).
+We have since integrated the optic lobe annotations from Matsliah _et al._ ["Neuronal parts list and wiring diagram for a visual system", Nature (2024)](https://www.nature.com/articles/s41586-024-07981-1)].
+With [Berg _et al._, bioRxiv (2025)](https://www.biorxiv.org/content/10.1101/2025.10.09.680999v1) we added/extended a lot of annotations based
+on cross-validation with the Janelia MaleCNS connectome.
 
 Annotations collated here are used by the [fafbseg-py](https://fafbseg-py.readthedocs.io/) Python and
 the [fafbseg](https://natverse.org/fafbseg/) R package to enable programmatic analysis of the FlyWire dataset.
@@ -89,7 +92,7 @@ Skeletons, connectivity and annotations for FlyWire neurons have been imported i
 
 Version `3.0.0` and later:
 
-Please cite Berg _et al._ (in prep), Schlegel _et al._ (2024) and Dorkenwald _et al._ (2024) when using annotations from this repository.
+Please cite Berg _et al._ (2025), Schlegel _et al._ (2024), Matsliah _et al._ (2024) and Dorkenwald _et al._ (2024) when using annotations from this repository.
 
 Pre `3.0.0`:
 
@@ -99,6 +102,22 @@ Please cite Schlegel _et al._ (2024) and Dorkenwald _et al._ (2024) when using a
 <summary>BibTex entries for publications</summary>
 
 ```bibtex
+@article{Berg2025,
+  author = {Berg,  Stuart and Beckett,  Isabella R and Costa,  Marta and Schlegel,  Philipp and Januszewski,  Michal and Marin,  Elizabeth C and Nern,  Aljoscha and Preibisch,  Stephan and Qiu,  Wei and Takemura,  Shin-ya and Fragniere,  Alexandra M C and Champion,  Andrew S and Adjavon,  Diane-Yayra and Cook,  Michael and Gkantia,  Marina and Hayworth,  Kenneth J and Huang,  Gary B and Kampf,  Florian and Katz,  William T and Lu,  Zhiyuan and Ordish,  Christopher and Paterson,  Tyler and Stuerner,  Tomke and Trautman,  Eric T and Whittle,  Catherine R and Burnett,  Laura E and Hoeller,  Judith and Li,  Feng and Loesche,  Frank and Morris,  Billy J and Pietzsch,  Tobias and Pleijzier,  Markus W and Silva,  Valeria and Yin,  Yijie and Ali,  Iris and Badalamente,  Griffin and Bates,  Alexander Shakeel and Bogovic,  John and Brooks,  Paul and Cachero,  Sebastian and Canino,  Brandon S and Chaisrisawatsuk,  Bhumpanya and Clements,  Jody and Crowe,  Arthur and de Haan Vicente,  Ines and Dempsey,  Georgia and Dona,  Erika and dos Santos,  Marcia and Dreher,  Marisa and Dunne,  Christopher R and Eichler,  Katharina and Finley-May,  Samantha and Flynn,  Miriam A and Hameed,  Imran and Hopkins,  Gary Patrick and Hubbard,  Philip M and Kiassat,  Ladann and Kovalyak,  Julie and Lauchie,  Shirley A and Leonard,  Meghan and Lohff,  Alanna and Longden,  Kit D and Maldonado,  Charli A and Mitletton,  Myrto and Moitra,  Ilina and Moon,  Sung Soo and Mooney,  Caroline and Munnelly,  Eva J and Okeoma,  Nneoma and Olbris,  Donald J and Pai,  Anika and Patel,  Birava and Phillips,  Emily M and Plaza,  Stephen M and Richards,  Alana and Rivas Salinas,  Jennifer and Roberts,  Ruairi J V and Rogers,  Edward M and Scott,  Ashley L and Scuderi,  Louis A and Seenivasan,  Pavithraa and Serratosa Capdevila,  Laia and Smith,  Claire and Svirskas,  Rob and Takemura,  Satoko and Tastekin,  Ibrahim and Thomson,  Alexander and Umayam,  Lowell and Walsh,  John J and Whittome,  Holly and Xu,  C Shan and Yakal,  Emily A and Yang,  Tansy and Zhao,  Arthur and George,  Reed and Jain,  Viren and Jayaraman,  Vivek and Korff,  Wyatt and Meissner,  Geoffrey W and Romani,  Sandro and Funke,  Jan and Knecht,  Christopher and Saalfeld,  Stephan and Scheffer,  Louis K and Waddell,  Scott and Card,  Gwyneth M and Ribeiro,  Carlos and Reiser,  Michael B and Hess,  Harald F and Rubin,  Gerald M and Jefferis,  Gregory S X E},
+  title = {Sexual dimorphism in the complete connectome of the Drosophila male central nervous system},
+  DOI = {10.1101/2025.10.09.680999},
+  publisher = {Cold Spring Harbor Laboratory},
+  year = {2025},
+}
+@article{Matsliah2024,
+  publisher = {Springer Science and Business Media LLC},
+  author = {Matsliah,  Arie and Yu,  Szi-chieh and Kruk,  Krzysztof and Bland,  Doug and Burke,  Austin T. and Gager,  Jay and Hebditch,  James and Silverman,  Ben and Willie,  Kyle Patrick and Willie,  Ryan and Sorek,  Marissa and Sterling,  Amy R. and Kind,  Emil and Garner,  Dustin and Sancer,  Gizem and Wernet,  Mathias F. and Kim,  Sung Soo and Murthy,  Mala and Seung,  H. Sebastian and David,  Celia and Joroff,  Jenna and Kristiansen,  Anne and Stocks,  Thomas and Braun,  Amalia and Silies,  Marion and Skelton,  Jaime and Aiken,  Travis R. and Ioannidou,  Maria and Collie,  Matt and Linneweber,  Gerit A. and Molina-Obando,  Sebastian and Dorkenwald,  Sven and Panes,  Nelsie and Gogo,  Allien Mae and Rastgarmoghaddam,  Dorfam and Pilapil,  Cathy and Candilada,  Rey Adrian and Serafetinidis,  Nikitas and Lee,  Wei-Chung and Borst,  Alexander and Wilson,  Rachel I. and Schlegel,  Philipp and Jefferis,  Gregory S. X. E.},
+  title = {Neuronal parts list and wiring diagram for a visual system},
+  year = {2024},
+  DOI = {10.1038/s41586-024-07981-1},
+  publisher = {Springer Nature},
+  journal = {Nature},
+}
 @article {Schlegel2024,
 	author = {Philipp Schlegel and Yijie Yin and Alexander Shakeel Bates and Sven Dorkenwald and Katharina Eichler and Paul Brooks and Daniel S Han and Marina Gkantia and Marcia dos Santos and Eva J Munnelly and Griffin Badalamente and Laia Serratosa Capdevila and Varun Aniruddha Sane and Alexandra M F Fragniere and Ladann Kiassat and Markus William Pleijzier and Imaan F M Tamimi and Christopher R Dunne and Irene Salgarella and Alexandre Javier and Siqi Fang and Eric Perlman and Tom Kazimiers and Sridhar R Jagannathan and Arie Matsliah and Amy R Sterling and Szi-chieh Yu and Claire E McKellar and FlyWire Consortium and Marta Costa and H. Sebastian Seung and Mala Murthy and Volker Hartenstein and Davi D Bock and Gregory S X E Jefferis},
 	title = {Whole-brain annotation and multi-connectome cell typing of Drosophila},
