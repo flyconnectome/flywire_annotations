@@ -16,6 +16,11 @@ on cross-validation with the Janelia MaleCNS connectome.
 Annotations collated here are used by the [fafbseg-py](https://fafbseg-py.readthedocs.io/) Python and
 the [fafbseg](https://natverse.org/fafbseg/) R package to enable programmatic analysis of the FlyWire dataset.
 
+> [!IMPORTANT]
+> Some but not all of the annotations deposited here are also available on [Codex](https://codex.flywire.ai/). Importantly,
+> Codex presents a mix of annotations from different sources which likely diverge from the systematic and cross-checked annotations
+> presented here.
+
 We're generally happy to consider contributions from the community to update/improve existing or add entirely new annotations.
 Please see the ["How to contribute"](#How-to-contribute?) section for details.
 
@@ -90,7 +95,7 @@ Skeletons, connectivity and annotations for FlyWire neurons have been imported i
 
 ## How to cite?
 
-Version `3.0.0` and later:
+Version `>=3.0.0`:
 
 Please cite Berg _et al._ (2025), Schlegel _et al._ (2024), Matsliah _et al._ (2024) and Dorkenwald _et al._ (2024) when using annotations from this repository.
 
@@ -141,7 +146,11 @@ Please cite Schlegel _et al._ (2024) and Dorkenwald _et al._ (2024) when using a
 Because annotations are still evolving we will occasionally update them. Thanks to Github's versioning you can always go back to the state at a
 given time (e.g. at initial publication) using the tags!
 
-- [`3.0.0`](https://github.com/flyconnectome/flywire_annotations/releases/tag/v3.0.0): First update based on [Berg _et al._, bioRxiv (2025)](https://www.biorxiv.org/content/10.1101/2025.10.09.680999v1). Principally based on comparison between FlyWire (materialization `783`) and the Janelia MaleCNS connectome (version `0.9`):
+- [`3.1.0`](https://github.com/flyconnectome/flywire_annotations/releases/tag/v3.1.0): Minor update based on the peer-reviewed version of [Berg _et al._ (2026, under rev.)]():
+  - complete retyping of Johnston's Organ (JO) sensory neurons
+  - updated `fru_dsx` annotations
+  - small changes to other columns (`cell_type`, `hemibrain_type`, etc)
+- [`3.0.0`](https://github.com/flyconnectome/flywire_annotations/releases/tag/v3.0.0): First update from [Berg _et al._, bioRxiv (2025)](https://www.biorxiv.org/content/10.1101/2025.10.09.680999v1). Principally based on comparison between FlyWire (materialization `783`) and the Janelia MaleCNS connectome (version `0.9`):
   - Updated and new cell type annotations based on cross-validation with MaleCNS
   - dimorphism (isomorphic, dimorphic, sex-specific) annotations (`dimorphism` and `matching_notes` columns)
   - synonyms for cell types to cross-link with past literature (`synonyms` column)
