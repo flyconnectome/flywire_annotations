@@ -8,10 +8,11 @@
 This repository contains systematic neuron annotations and other data products for the `783` public release of
 the FlyWire female adult fly brain (FAFB) connectome.
 
-The initial set of annotations was reported in Schlegel _et al._ ["Whole-brain annotation and multi-connectome cell typing of Drosophila", Nature (2024)](https://doi-org.ezp.lib.cam.ac.uk/10.1038/s41586-024-07686-5).
-We have since integrated the optic lobe annotations from Matsliah _et al._ ["Neuronal parts list and wiring diagram for a visual system", Nature (2024)](https://www.nature.com/articles/s41586-024-07981-1)].
-With [Berg _et al._, bioRxiv (2025)](https://www.biorxiv.org/content/10.1101/2025.10.09.680999v1) we added/extended a lot of annotations based
-on cross-validation with the Janelia MaleCNS connectome.
+The annotations were first described in Schlegel _et al._ ["Whole-brain annotation and multi-connectome cell typing of Drosophila", Nature (2024)](https://doi.org/10.1038/s41586-024-07686-5). Since then we have:
+
+- integrated the optic lobe annotations from Matsliah _et al._ ["Neuronal parts list and wiring diagram for a visual system", Nature (2024)](https://doi.org/10.1038/s41586-024-07981-1)
+- added and revised many annotations by cross-validating against the Janelia MaleCNS connectome, described in Berg _et al._ ["Sexual dimorphism in the complete Drosophila male central nervous system connectome", Cell (2026)](https://doi.org/10.1016/j.cell.2026.08.015)
+- retyped the gustatory receptor neurons and annotated their putative taste modalities following Tastekin _et al._ ["The complete gustatory connectome of adult Drosophila reveals how taste guides feeding, foraging, and social behavior", Cell (2026)](https://doi.org/10.1016/j.cell.2026.08.016)
 
 Annotations collated here are used by the [fafbseg-py](https://fafbseg-py.readthedocs.io/) Python and
 the [fafbseg](https://natverse.org/fafbseg/) R package to enable programmatic analysis of the FlyWire dataset.
@@ -95,9 +96,13 @@ Skeletons, connectivity and annotations for FlyWire neurons have been imported i
 
 ## How to cite?
 
-Version `>=3.0.0`:
+Version `>=3.2.0`:
 
-Please cite Berg _et al._ (2025), Schlegel _et al._ (2024), Matsliah _et al._ (2024) and Dorkenwald _et al._ (2024) when using annotations from this repository.
+Please cite Berg _et al._ (2026), Schlegel _et al._ (2024), Tastekin _et al._ (2026), Matsliah _et al._ (2024) and Dorkenwald _et al._ (2024) when using annotations from this repository.
+
+Versions `3.0.0` to `3.1.x`:
+
+Please cite Berg _et al._ (2026), Schlegel _et al._ (2024), Matsliah _et al._ (2024) and Dorkenwald _et al._ (2024) when using annotations from this repository.
 
 Pre `3.0.0`:
 
@@ -107,12 +112,26 @@ Please cite Schlegel _et al._ (2024) and Dorkenwald _et al._ (2024) when using a
 <summary>BibTex entries for publications</summary>
 
 ```bibtex
-@article{Berg2025,
-  author = {Berg,  Stuart and Beckett,  Isabella R and Costa,  Marta and Schlegel,  Philipp and Januszewski,  Michal and Marin,  Elizabeth C and Nern,  Aljoscha and Preibisch,  Stephan and Qiu,  Wei and Takemura,  Shin-ya and Fragniere,  Alexandra M C and Champion,  Andrew S and Adjavon,  Diane-Yayra and Cook,  Michael and Gkantia,  Marina and Hayworth,  Kenneth J and Huang,  Gary B and Kampf,  Florian and Katz,  William T and Lu,  Zhiyuan and Ordish,  Christopher and Paterson,  Tyler and Stuerner,  Tomke and Trautman,  Eric T and Whittle,  Catherine R and Burnett,  Laura E and Hoeller,  Judith and Li,  Feng and Loesche,  Frank and Morris,  Billy J and Pietzsch,  Tobias and Pleijzier,  Markus W and Silva,  Valeria and Yin,  Yijie and Ali,  Iris and Badalamente,  Griffin and Bates,  Alexander Shakeel and Bogovic,  John and Brooks,  Paul and Cachero,  Sebastian and Canino,  Brandon S and Chaisrisawatsuk,  Bhumpanya and Clements,  Jody and Crowe,  Arthur and de Haan Vicente,  Ines and Dempsey,  Georgia and Dona,  Erika and dos Santos,  Marcia and Dreher,  Marisa and Dunne,  Christopher R and Eichler,  Katharina and Finley-May,  Samantha and Flynn,  Miriam A and Hameed,  Imran and Hopkins,  Gary Patrick and Hubbard,  Philip M and Kiassat,  Ladann and Kovalyak,  Julie and Lauchie,  Shirley A and Leonard,  Meghan and Lohff,  Alanna and Longden,  Kit D and Maldonado,  Charli A and Mitletton,  Myrto and Moitra,  Ilina and Moon,  Sung Soo and Mooney,  Caroline and Munnelly,  Eva J and Okeoma,  Nneoma and Olbris,  Donald J and Pai,  Anika and Patel,  Birava and Phillips,  Emily M and Plaza,  Stephen M and Richards,  Alana and Rivas Salinas,  Jennifer and Roberts,  Ruairi J V and Rogers,  Edward M and Scott,  Ashley L and Scuderi,  Louis A and Seenivasan,  Pavithraa and Serratosa Capdevila,  Laia and Smith,  Claire and Svirskas,  Rob and Takemura,  Satoko and Tastekin,  Ibrahim and Thomson,  Alexander and Umayam,  Lowell and Walsh,  John J and Whittome,  Holly and Xu,  C Shan and Yakal,  Emily A and Yang,  Tansy and Zhao,  Arthur and George,  Reed and Jain,  Viren and Jayaraman,  Vivek and Korff,  Wyatt and Meissner,  Geoffrey W and Romani,  Sandro and Funke,  Jan and Knecht,  Christopher and Saalfeld,  Stephan and Scheffer,  Louis K and Waddell,  Scott and Card,  Gwyneth M and Ribeiro,  Carlos and Reiser,  Michael B and Hess,  Harald F and Rubin,  Gerald M and Jefferis,  Gregory S X E},
-  title = {Sexual dimorphism in the complete connectome of the Drosophila male central nervous system},
-  DOI = {10.1101/2025.10.09.680999},
-  publisher = {Cold Spring Harbor Laboratory},
-  year = {2025},
+@article{Tastekin2026,
+  author = {Tastekin,  Ibrahim and de Haan Vicente,  In{\^e}s and Beresford,  Rory J. and Morris,  Billy J. and Beckett,  Isabella and Schlegel,  Philipp and Gkantia,  Marina and {FlyEM Project Team} and {Cambridge Connectomics Group} and Marin,  Elizabeth C. and Costa,  Marta and Jefferis,  Gregory S. X. E. and Ribeiro,  Carlos},
+  title = {The complete gustatory connectome of adult Drosophila reveals how taste guides feeding, foraging, and social behavior},
+  journal = {Cell},
+  volume = {189},
+  pages = {5527--5551},
+  year = {2026},
+  doi = {10.1016/j.cell.2026.08.016},
+  publisher = {Elsevier},
+}
+@article{Berg2026,
+  author = {Berg,  Stuart and Beckett,  Isabella R. and Costa,  Marta and Schlegel,  Philipp and Januszewski,  Michał and Marin,  Elizabeth C. and Nern,  Aljoscha and Preibisch,  Stephan and Qiu,  Wei and Takemura,  Shin-ya and Fragniere,  Alexandra M.C. and Champion,  Andrew S. and Adjavon,  Diane-Yayra and Cook,  Michael and Gkantia,  Marina and Hayworth,  Kenneth J. and Huang,  Gary B. and Katz,  William T. and Kämpf,  Florian and Lu,  Zhiyuan and Ordish,  Christopher and Paterson,  Tyler and Stürner,  Tomke and Trautman,  Eric T. and Whittle,  Catherine R. and Burnett,  Laura E. and Hoeller,  Judith and Li,  Feng and Loesche,  Frank and Morris,  Billy J. and Pietzsch,  Tobias and Pleijzier,  Markus W. and Silva,  Valeria and Yin,  Yijie and Ali,  Iris and Badalamente,  Griffin and Bates,  Alexander Shakeel and Beresford,  Rory J. and Bogovic,  John and Brooks,  Paul and Cachero,  Sebastian and Canino,  Brandon S. and Chaisrisawatsuk,  Bhumpanya and Clements,  Jody and Crowe,  Arthur and de Haan Vicente,  Inês and Dempsey,  Georgia and Donà,  Erika and Dos Santos,  Márcia and Dreher,  Marisa and Dunne,  Christopher R. and Eichler,  Katharina and Finley-May,  Samantha and Flynn,  Miriam A. and Hameed,  Imran and Hopkins,  Gary Patrick and Hubbard,  Philip M. and Kiassat,  Ladann and Kovalyak,  Julie and Lauchie,  Shirley A. and Leonard,  Meghan and Lohff,  Alanna and Longden,  Kit D. and Maldonado,  Charli A. and Moitra,  Ilina and Moon,  Sung Soo and Mooney,  Caroline and Munnelly,  Eva J. and Okeoma,  Nneoma and Olbris,  Donald J. and Pai,  Anika and Patel,  Birava and Phillips,  Emily M. and Plaza,  Stephen M. and Richards,  Alana and Rivas Salinas,  Jennifer and Roberts,  Ruairí J.V. and Rogers,  Edward M. and Scott,  Ashley L. and Scuderi,  Louis A. and Seenivasan,  Pavithraa and Serratosa Capdevila,  Laia and Smith,  Claire and Svirskas,  Rob and Takemura,  Satoko and Tastekin,  Ibrahim and Thomson,  Alexander and Umayam,  Lowell and Walsh,  John J. and Whittome,  Holly and Xu,  C. Shan and Yakal,  Emily A. and Yang,  Tansy and Zhao,  Arthur and George,  Reed and Jain,  Viren and Jayaraman,  Vivek and Korff,  Wyatt and Meissner,  Geoffrey W. and Romani,  Sandro and Funke,  Jan and Knecht,  Christopher and Saalfeld,  Stephan and Scheffer,  Louis K. and Waddell,  Scott and Card,  Gwyneth M. and Ribeiro,  Carlos and Reiser,  Michael B. and Hess,  Harald F. and Rubin,  Gerald M. and Jefferis,  Gregory S.X.E.},
+  title = {Sexual dimorphism in the complete Drosophila male central nervous system connectome},
+  journal = {Cell},
+  volume = {189},
+  number = {18},
+  pages = {5504--5526.e15},
+  year = {2026},
+  doi = {10.1016/j.cell.2026.08.015},
+  publisher = {Elsevier},
 }
 @article{Matsliah2024,
   publisher = {Springer Science and Business Media LLC},
@@ -146,7 +165,12 @@ Please cite Schlegel _et al._ (2024) and Dorkenwald _et al._ (2024) when using a
 Because annotations are still evolving we will occasionally update them. Thanks to Github's versioning you can always go back to the state at a
 given time (e.g. at initial publication) using the tags!
 
-- [`3.1.0`](https://github.com/flyconnectome/flywire_annotations/releases/tag/v3.1.0): Minor update based on the peer-reviewed version of [Berg _et al._ (2026, under rev.)]():
+- [`3.2.0`](https://github.com/flyconnectome/flywire_annotations/releases/tag/v3.2.0): Gustatory receptor neurons (GRNs) aligned with [Tastekin _et al._, Cell (2026)](https://doi.org/10.1016/j.cell.2026.08.016) (see [#7](https://github.com/flyconnectome/flywire_annotations/issues/7)):
+  - labellar bristle GRNs retyped per neuron into the paper's subtypes (`LB1a`–`e`, `LB2a`–`c`, `LB3a`–`d`, `LB4a`–`b`); the old `LB1a,LB1d`, `LB2a-b` and `LB2d` types are gone
+  - `cell_sub_class` of labellar bristle GRNs now gives the putative taste modality (`bitter`, `glutamate`, `water`, `sugar`, `sugar/low_salt`, `high_salt/heavy_metal`, `putative_aversive`, `putative_attractive`), replacing `low-salt` and `sugar/water`; notably, `LB1e` is no longer annotated as `bitter`
+  - leg ascending GRNs renamed from `SA_VTV_*` to `LgAG1`–`9` (old names kept in `synonyms`) and `side` corrected for two neurons
+  - `CB4146` moved to `cell_class` gustatory / `cell_sub_class` taste peg
+- [`3.1.0`](https://github.com/flyconnectome/flywire_annotations/releases/tag/v3.1.0): Minor update based on the peer-reviewed version of [Berg _et al._, Cell (2026)](https://doi.org/10.1016/j.cell.2026.08.015):
   - complete retyping of Johnston's Organ (JO) sensory neurons
   - updated `fru_dsx` annotations
   - small changes to other columns (`cell_type`, `hemibrain_type`, etc)
